@@ -28,6 +28,10 @@ angular.module('starter', ['ionic'])
     {
       $scope.artists = data;
 
+      $scope.toggleStar = function(item) {
+        item.star = !item.star; 
+      }
+
       $scope.onItemDelete = function(item) {
         $scope.artists.splice($scope.artists.indexOf(item), 1);
       }
