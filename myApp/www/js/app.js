@@ -70,6 +70,7 @@ angular.module('starter', ['ionic'])
     {
       $scope.artists = data;
       $scope.whichartist=$state.params.aId;
+      $scope.data = { showDelete: false, showReorder: false};
 
       $scope.toggleStar = function(item) {
         item.star = !item.star; 
